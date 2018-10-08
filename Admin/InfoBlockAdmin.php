@@ -7,8 +7,6 @@
  * @author Okulov Anton
  * @email qantus@mail.ru
  * @version 1.0
- * @company HashStudio
- * @site http://hashstudio.ru
  * @date 03/10/16 10:32
  */
 
@@ -39,13 +37,13 @@ class InfoBlockAdmin extends Admin
         return new InfoBlock();
     }
 
-    public static function getName()
+    public function getName()
     {
-        return 'Текстовые блоки';
+        return $this->t('Text.main', 'Text blocks');
     }
 
-    public static function getItemName()
+    public function getItemName()
     {
-        return 'Текстовый блок';
+        return $this->t('Text.main', 'Text blocks');
     }
 }
